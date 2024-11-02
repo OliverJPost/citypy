@@ -1,0 +1,185 @@
+use_multiprocessing = false
+domain_border_buffer = 1000
+
+[logging]
+enable_logging = true
+log_filename = "citypy.log"
+message_format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+level = "INFO"
+
+[overpass_api]
+timeout_seconds = 500
+use_cache = true
+cache_folder = ""
+output_log = true
+log_filename = "osmnx.log"
+log_folder = "./logs"
+
+[custom_api_instance]
+enable = false
+endpoint = ""
+
+[overturemaps]
+use_overture_for_buildings = false
+
+[local_overture]
+use_local_parquet = false
+release_folder = "/mnt/storage/student_theses/2024_oliver_post/overture_db/2024-07-22.0/"
+
+[layers.buildings]
+name = "buildings"
+unique_id = "id::building"
+
+
+[layers.buildings.base_attributes]
+building_type = "building_type"
+ghsl_height = "ghsl_height"
+real_levels = "real_levels"
+real_height = "real_height"
+source = "source"
+confidence = "confidence"
+roof_shape = "roof_shape"
+subtype = "subtype"
+class = "class"
+name = "name"
+
+
+[layers.buildings.attributes]
+area = "area"
+perimeter = "perimeter"
+equivalent_rectangular_index = "equivalent_rectangular_index"
+elongation = "elongation"
+shared_walls_ratio = "shared_walls_ratio"
+neighbor_distance = "neighbor_distance"
+mean_interbuilding_distance = "mean_interbuilding_distance"
+adjacency = "adjacency"
+closest_road_edge_id = "closest_road_edge_id"
+covered_area = "covered_area"
+building_group_id = "building_group_id"
+building_group_enclosure_perimeter_coverage = "building_group_enclosure_perimeter_coverage"
+building_group_area_std = "building_group_area_std"
+building_group_elongation_std = "building_group_elongation_std"
+building_group_courtyard_index = "building_group_courtyard_index"
+building_group_courtyard_count = "building_group_courtyard_count"
+approximate_height = "approximate_height"
+approximate_height_level_height_m = 3
+squareness = "squareness"
+alignment = "alignment"
+orientation = "orientation"
+shape_index = "shape_index"
+form_factor = "form_factor"
+neighbourhood_impervious_land_cover_percentage = "neighbourhood_impervious_land_cover_percentage"
+land_use_category = "land_use_category"
+building_class = "building_class"
+
+[layers.road_edges]
+name = "road_edges"
+unique_id = "edge_id"
+
+[layers.road_edges.attributes]
+type_category = "type_category"
+betweenness = "betweenness"
+forward_angle = "forward_angle"
+linearity = "linearity"
+neighboring_street_orientation_deviation = "neighboring_street_orientation_deviation"
+coins_length = "coins_length"
+intersection_left_angle = "intersection_left_angle"
+major_intersection_left_angle = "major_intersection_left_angle"
+enclosure_ids = "enclosure_ids"
+distance_to_last_intersection = "distance_to_last_intersection"
+distance_to_last_major_intersection = "distance_to_last_major_intersection"
+next_node_degree = "next_node_degree"
+previous_segment_forward_angle = "previous_segment_forward_angle"
+previous_segment_length = "previous_segment_length"
+bearing = "bearing"
+section_length = "section_length"
+major_section_length = "major_section_length"
+stretch_linearity = "stretch_linearity"
+section_cumulative_angle = "section_cumulative_angle"
+curviness = "curviness"
+right_neighbour_angle_deviation = "right_neighbour_angle_deviation"
+city_center_bearing = "city_center_bearing"
+dead_end_section = "dead_end_section"
+section_id = "section_id"
+major_section_id = "major_section_id"
+on_domain_border = "on_domain_border"
+continuity = "continuity"
+stretch_curvilinearity = "stretch_curvilinearity"
+right_neighbour= "right_neighbour"
+right_neighbour_max_distance_m = 300
+right_major_neighbour = "right_major_neighbour"
+right_major_neighbour_max_distance_m = 2000
+right_neighbour_distance = "right_neighbour_distance"
+right_major_neighbour_angle_deviation = "right_major_neighbour_angle_deviation"
+right_major_neighbour_distance = "right_major_neighbour_distance"
+next_node_major_degree = "next_node_major_degree"
+
+[layers.road_nodes]
+name = "road_nodes"
+unique_id = "node_id"
+
+[layers.road_nodes.attributes]
+average_neighbor_degree = "average_neighbor_degree"
+node_degree = "node_degree"
+clustering = "clustering"
+is_intersection = "is_intersection"
+is_major_intersection = "is_major_intersection"
+node_major_degree = "node_major_degree"
+
+[layers.blocks]
+name = "blocks"
+unique_id = "block_id"
+
+[layers.blocks.attributes]
+circular_compactness = "circular_compactness"
+equivalent_rectangular_index = "equivalent_rectangular_index"
+rectangularity = "rectangularity"
+
+[layers.tesselation]
+name = "tesselation"
+area_threshold_m2 = 10
+
+
+[layers.plots]
+name = "plots"
+unique_id = "plot_id"
+
+
+[layers.enclosures]
+name = "enclosures"
+unique_id = "enclosure_id"
+
+[layers.enclosures.attributes]
+rectangularity = "rectangularity"
+elongation = "elongation"
+fractal_dimension = "fractal_dimension"
+circular_compactness = "circular_compactness"
+perimeter_area_ratio = "perimeter_area_ratio"
+enclosurue_building_area_ratio = "enclosurue_building_area_ratio"
+
+[layers.landuse]
+name = "landuse"
+
+[layers.water]
+name = "water"
+
+[layers.city_center]
+name = "city_center"
+
+[layers.extents]
+name = "extents"
+
+[layers.built_h_anbh]
+name = "built_h_anbh"
+
+[layers.built_h_agbh]
+name = "built_h_agbh"
+
+[layers.grid]
+name = "grid"
+
+[layers.enclosed_tesselation]
+name = "enclosed_tesselation"
+
+[layers.land_cover]
+name = "land_cover"

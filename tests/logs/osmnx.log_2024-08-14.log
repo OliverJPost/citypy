@@ -1,0 +1,18 @@
+2024-08-14 16:44:44,395 INFO OSMnx Projected GeoDataFrame to 'EPSG:32719 / WGS 84 / UTM zone 19S'
+2024-08-14 16:44:44,397 INFO OSMnx Projected GeoDataFrame to 'EPSG:4326 / WGS 84'
+2024-08-14 16:44:44,397 INFO OSMnx Requesting data from API in 1 request(s)
+2024-08-14 16:44:44,424 INFO OSMnx Resolved 'overpass-api.de' to '65.109.112.52'
+2024-08-14 16:44:44,552 INFO OSMnx Pausing 0 second(s) before making HTTP POST request to 'overpass-api.de'
+2024-08-14 16:44:44,552 INFO OSMnx Post https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A500%5D%3B%28%28node%5B%27building%27%5D%28poly%3A%27-53.198800+-70.980800+-53.113900+-70.980800+-53.113900+-70.816600+-53.198800+-70.816600+-53.198800+-70.980800%27%29%3B%28._%3B%3E%3B%29%3B%29%3B%28way%5B%27building%27%5D%28poly%3A%27-53.198800+-70.980800+-53.113900+-70.980800+-53.113900+-70.816600+-53.198800+-70.816600+-53.198800+-70.980800%27%29%3B%28._%3B%3E%3B%29%3B%29%3B%28relation%5B%27building%27%5D%28poly%3A%27-53.198800+-70.980800+-53.113900+-70.980800+-53.113900+-70.816600+-53.198800+-70.816600+-53.198800+-70.980800%27%29%3B%28._%3B%3E%3B%29%3B%29%3B%29%3Bout%3B with timeout=500
+2024-08-14 16:44:44,555 INFO OSMnx Resolved 'overpass-api.de' to '65.109.112.52'
+2024-08-14 16:44:44,919 INFO OSMnx Downloaded 1,970.1kB from 'overpass-api.de' with status 200
+2024-08-14 16:44:44,967 INFO OSMnx Saved response to cache file 'cache/8c2f5bfcb9c0fee4223b7d6d0de2204a6294350b.json'
+2024-08-14 16:44:45,010 INFO OSMnx Retrieved all data from API in 1 request(s)
+2024-08-14 16:44:45,010 INFO OSMnx 2965 geometries created in the dict
+2024-08-14 16:44:45,010 INFO OSMnx 39 untagged features removed
+2024-08-14 16:44:45,032 INFO OSMnx Built r-tree spatial index for 2,926 geometries
+2024-08-14 16:44:45,033 INFO OSMnx Accelerating r-tree with 4 quadrats
+2024-08-14 16:44:45,040 INFO OSMnx Identified 2,926 geometries inside polygon
+2024-08-14 16:44:45,042 INFO OSMnx 0 features removed by the polygon filter
+2024-08-14 16:44:45,042 INFO OSMnx 7 features removed by the tag filter
+2024-08-14 16:44:45,063 INFO OSMnx 2919 features in the final GeoDataFrame

@@ -1,0 +1,1 @@
+#City,Country,West,South,East,North,Population

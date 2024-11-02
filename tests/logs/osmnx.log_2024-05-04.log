@@ -1,0 +1,110 @@
+2024-05-04 12:35:24,010 INFO OSMnx Converting node, edge, and graph-level attribute data types
+2024-05-04 12:35:24,026 INFO OSMnx Loaded graph with 1212 nodes and 3257 edges from 'test_download/responses/raw_delfgauw_nl_graph.graphml'
+2024-05-04 12:35:24,142 INFO OSMnx Converting node, edge, and graph-level attribute data types
+2024-05-04 12:35:24,158 INFO OSMnx Loaded graph with 1212 nodes and 3257 edges from 'test_download/responses/raw_delfgauw_nl_graph.graphml'
+2024-05-04 12:35:24,165 INFO OSMnx Created nodes GeoDataFrame from graph
+2024-05-04 12:35:24,209 INFO OSMnx Created edges GeoDataFrame from graph
+2024-05-04 12:35:24,348 INFO OSMnx Created graph from node/edge GeoDataFrames
+2024-05-04 12:35:24,401 INFO OSMnx Converting node, edge, and graph-level attribute data types
+2024-05-04 12:35:24,417 INFO OSMnx Loaded graph with 1212 nodes and 3257 edges from 'test_download/responses/raw_delfgauw_nl_graph.graphml'
+2024-05-04 12:35:24,423 INFO OSMnx Created nodes GeoDataFrame from graph
+2024-05-04 12:35:24,465 INFO OSMnx Created edges GeoDataFrame from graph
+2024-05-04 12:35:24,662 INFO OSMnx Created graph from node/edge GeoDataFrames
+2024-05-04 12:36:00,379 INFO OSMnx Converting node, edge, and graph-level attribute data types
+2024-05-04 12:36:00,407 INFO OSMnx Loaded graph with 1212 nodes and 3257 edges from 'test_download/responses/raw_delfgauw_nl_graph.graphml'
+2024-05-04 12:36:00,515 INFO OSMnx Converting node, edge, and graph-level attribute data types
+2024-05-04 12:36:00,543 INFO OSMnx Loaded graph with 1212 nodes and 3257 edges from 'test_download/responses/raw_delfgauw_nl_graph.graphml'
+2024-05-04 12:36:00,554 INFO OSMnx Created nodes GeoDataFrame from graph
+2024-05-04 12:36:00,624 INFO OSMnx Created edges GeoDataFrame from graph
+2024-05-04 12:36:00,896 INFO OSMnx Created graph from node/edge GeoDataFrames
+2024-05-04 12:36:00,974 INFO OSMnx Converting node, edge, and graph-level attribute data types
+2024-05-04 12:36:01,056 INFO OSMnx Loaded graph with 1212 nodes and 3257 edges from 'test_download/responses/raw_delfgauw_nl_graph.graphml'
+2024-05-04 12:36:01,065 INFO OSMnx Created nodes GeoDataFrame from graph
+2024-05-04 12:36:01,133 INFO OSMnx Created edges GeoDataFrame from graph
+2024-05-04 12:36:01,380 INFO OSMnx Created graph from node/edge GeoDataFrames
+2024-05-04 12:42:58,008 INFO OSMnx Converting node, edge, and graph-level attribute data types
+2024-05-04 12:42:58,037 INFO OSMnx Loaded graph with 1212 nodes and 3257 edges from 'test_download/responses/raw_delfgauw_nl_graph.graphml'
+2024-05-04 12:42:58,143 INFO OSMnx Converting node, edge, and graph-level attribute data types
+2024-05-04 12:42:58,171 INFO OSMnx Loaded graph with 1212 nodes and 3257 edges from 'test_download/responses/raw_delfgauw_nl_graph.graphml'
+2024-05-04 12:42:58,180 INFO OSMnx Created nodes GeoDataFrame from graph
+2024-05-04 12:42:58,250 INFO OSMnx Created edges GeoDataFrame from graph
+2024-05-04 12:42:58,524 INFO OSMnx Created graph from node/edge GeoDataFrames
+2024-05-04 12:42:58,603 INFO OSMnx Converting node, edge, and graph-level attribute data types
+2024-05-04 12:42:58,682 INFO OSMnx Loaded graph with 1212 nodes and 3257 edges from 'test_download/responses/raw_delfgauw_nl_graph.graphml'
+2024-05-04 12:42:58,692 INFO OSMnx Created nodes GeoDataFrame from graph
+2024-05-04 12:42:58,762 INFO OSMnx Created edges GeoDataFrame from graph
+2024-05-04 12:42:59,013 INFO OSMnx Created graph from node/edge GeoDataFrames
+2024-05-04 13:21:14,942 INFO OSMnx Pausing 1 second(s) before making HTTP GET request to 'nominatim.openstreetmap.org'
+2024-05-04 13:21:15,947 INFO OSMnx Get https://nominatim.openstreetmap.org/search?format=json&polygon_geojson=1&dedupe=0&limit=50&q= with timeout=500
+2024-05-04 13:21:16,034 INFO OSMnx Downloaded 0.0kB from 'nominatim.openstreetmap.org' with status 200
+2024-05-04 13:21:16,035 INFO OSMnx Saved response to cache file 'cache/80512f8f17c89a21b79310fe7d4f0747063c9611.json'
+2024-05-04 13:21:53,903 INFO OSMnx Pausing 1 second(s) before making HTTP GET request to 'nominatim.openstreetmap.org'
+2024-05-04 13:21:54,908 INFO OSMnx Get https://nominatim.openstreetmap.org/search?format=json&polygon_geojson=1&dedupe=0&limit=50&q=amsterdam%2C+NL with timeout=500
+2024-05-04 13:21:55,350 INFO OSMnx Downloaded 289.6kB from 'nominatim.openstreetmap.org' with status 200
+2024-05-04 13:21:55,364 INFO OSMnx Saved response to cache file 'cache/93c71847b0929e20a96c9841c27351607c2e56bb.json'
+2024-05-04 13:21:55,382 INFO OSMnx Created GeoDataFrame with 1 rows from 1 queries
+2024-05-04 13:21:55,385 INFO OSMnx Constructed place geometry polygon(s) to query API
+2024-05-04 13:21:55,437 INFO OSMnx Projected GeoDataFrame to 'EPSG:32631 / WGS 84 / UTM zone 31N'
+2024-05-04 13:21:55,440 INFO OSMnx Projected GeoDataFrame to 'EPSG:4326 / WGS 84'
+2024-05-04 13:21:55,441 INFO OSMnx Requesting data from API in 1 request(s)
+2024-05-04 13:21:55,443 INFO OSMnx Resolved 'overpass-api.de' to '162.55.144.139'
+2024-05-04 13:21:55,509 INFO OSMnx Pausing 0 second(s) before making HTTP POST request to 'overpass-api.de'
+2024-05-04 13:21:55,509 INFO OSMnx Post https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A500%5D%3B%28%28node%5B%27building%27%5D%28poly%3A%2752.278174+4.961054+52.278305+4.955241+52.325557+4.818426+52.335042+4.798216+52.355520+4.756653+52.355829+4.756106+52.356150+4.755684+52.356537+4.755314+52.356832+4.755104+52.400708+4.728778+52.429225+4.738567+52.431064+4.739208+52.430679+4.865970+52.430672+4.866691+52.426762+4.982636+52.425443+5.000157+52.417239+5.065413+52.416558+5.068270+52.416452+5.068508+52.415823+5.069917+52.415394+5.070857+52.413839+5.074262+52.406419+5.075706+52.404173+5.076143+52.394068+5.078109+52.390699+5.078765+52.388654+5.079162+52.302457+5.021543+52.289118+4.997475+52.279582+4.967674+52.278174+4.961054%27%29%3B%28._%3B%3E%3B%29%3B%29%3B%28way%5B%27building%27%5D%28poly%3A%2752.278174+4.961054+52.278305+4.955241+52.325557+4.818426+52.335042+4.798216+52.355520+4.756653+52.355829+4.756106+52.356150+4.755684+52.356537+4.755314+52.356832+4.755104+52.400708+4.728778+52.429225+4.738567+52.431064+4.739208+52.430679+4.865970+52.430672+4.866691+52.426762+4.982636+52.425443+5.000157+52.417239+5.065413+52.416558+5.068270+52.416452+5.068508+52.415823+5.069917+52.415394+5.070857+52.413839+5.074262+52.406419+5.075706+52.404173+5.076143+52.394068+5.078109+52.390699+5.078765+52.388654+5.079162+52.302457+5.021543+52.289118+4.997475+52.279582+4.967674+52.278174+4.961054%27%29%3B%28._%3B%3E%3B%29%3B%29%3B%28relation%5B%27building%27%5D%28poly%3A%2752.278174+4.961054+52.278305+4.955241+52.325557+4.818426+52.335042+4.798216+52.355520+4.756653+52.355829+4.756106+52.356150+4.755684+52.356537+4.755314+52.356832+4.755104+52.400708+4.728778+52.429225+4.738567+52.431064+4.739208+52.430679+4.865970+52.430672+4.866691+52.426762+4.982636+52.425443+5.000157+52.417239+5.065413+52.416558+5.068270+52.416452+5.068508+52.415823+5.069917+52.415394+5.070857+52.413839+5.074262+52.406419+5.075706+52.404173+5.076143+52.394068+5.078109+52.390699+5.078765+52.388654+5.079162+52.302457+5.021543+52.289118+4.997475+52.279582+4.967674+52.278174+4.961054%27%29%3B%28._%3B%3E%3B%29%3B%29%3B%29%3Bout%3B with timeout=500
+2024-05-04 13:21:55,510 INFO OSMnx Resolved 'overpass-api.de' to '162.55.144.139'
+2024-05-04 13:22:03,725 INFO OSMnx Downloaded 192,102.7kB from 'overpass-api.de' with status 200
+2024-05-04 13:22:06,753 INFO OSMnx Saved response to cache file 'cache/0ca4655c51ebb52e43edbe29dd73503c661dea57.json'
+2024-05-04 13:22:11,390 INFO OSMnx Retrieved all data from API in 1 request(s)
+2024-05-04 13:22:11,390 INFO OSMnx 241824 geometries created in the dict
+2024-05-04 13:22:11,391 INFO OSMnx 1279 untagged features removed
+2024-05-04 13:22:19,915 INFO OSMnx Built r-tree spatial index for 240,545 geometries
+2024-05-04 13:22:19,929 INFO OSMnx Accelerating r-tree with 12 quadrats
+2024-05-04 13:22:26,416 INFO OSMnx Identified 198,288 geometries inside polygon
+2024-05-04 13:22:26,486 INFO OSMnx 42257 features removed by the polygon filter
+2024-05-04 13:22:26,503 INFO OSMnx 5581 features removed by the tag filter
+2024-05-04 13:22:31,633 INFO OSMnx 193926 features in the final GeoDataFrame
+2024-05-04 13:22:43,859 INFO OSMnx Retrieved response from cache file 'cache/93c71847b0929e20a96c9841c27351607c2e56bb.json'
+2024-05-04 13:22:43,866 INFO OSMnx Created GeoDataFrame with 1 rows from 1 queries
+2024-05-04 13:22:43,867 INFO OSMnx Constructed place geometry polygon(s) to query API
+2024-05-04 13:22:43,903 INFO OSMnx Projected GeoDataFrame to 'EPSG:32631 / WGS 84 / UTM zone 31N'
+2024-05-04 13:22:43,906 INFO OSMnx Projected GeoDataFrame to 'EPSG:4326 / WGS 84'
+2024-05-04 13:22:43,906 INFO OSMnx Requesting data from API in 1 request(s)
+2024-05-04 13:22:45,194 INFO OSMnx Retrieved response from cache file 'cache/0ca4655c51ebb52e43edbe29dd73503c661dea57.json'
+2024-05-04 13:22:49,854 INFO OSMnx Retrieved all data from API in 1 request(s)
+2024-05-04 13:22:49,854 INFO OSMnx 241824 geometries created in the dict
+2024-05-04 13:22:49,855 INFO OSMnx 1279 untagged features removed
+2024-05-04 13:22:57,247 INFO OSMnx Built r-tree spatial index for 240,545 geometries
+2024-05-04 13:22:57,254 INFO OSMnx Accelerating r-tree with 12 quadrats
+2024-05-04 13:23:03,822 INFO OSMnx Identified 198,288 geometries inside polygon
+2024-05-04 13:23:03,904 INFO OSMnx 42257 features removed by the polygon filter
+2024-05-04 13:23:03,924 INFO OSMnx 5581 features removed by the tag filter
+2024-05-04 13:23:09,190 INFO OSMnx 193926 features in the final GeoDataFrame
+2024-05-04 13:26:27,891 INFO OSMnx Retrieved response from cache file 'cache/93c71847b0929e20a96c9841c27351607c2e56bb.json'
+2024-05-04 13:26:27,898 INFO OSMnx Created GeoDataFrame with 1 rows from 1 queries
+2024-05-04 13:26:27,899 INFO OSMnx Constructed place geometry polygon(s) to query API
+2024-05-04 13:26:27,933 INFO OSMnx Projected GeoDataFrame to 'EPSG:32631 / WGS 84 / UTM zone 31N'
+2024-05-04 13:26:27,936 INFO OSMnx Projected GeoDataFrame to 'EPSG:4326 / WGS 84'
+2024-05-04 13:26:27,936 INFO OSMnx Requesting data from API in 1 request(s)
+2024-05-04 13:26:29,150 INFO OSMnx Retrieved response from cache file 'cache/0ca4655c51ebb52e43edbe29dd73503c661dea57.json'
+2024-05-04 13:26:33,886 INFO OSMnx Retrieved all data from API in 1 request(s)
+2024-05-04 13:26:33,886 INFO OSMnx 241824 geometries created in the dict
+2024-05-04 13:26:33,887 INFO OSMnx 1279 untagged features removed
+2024-05-04 13:26:42,197 INFO OSMnx Built r-tree spatial index for 240,545 geometries
+2024-05-04 13:26:42,205 INFO OSMnx Accelerating r-tree with 12 quadrats
+2024-05-04 13:26:48,557 INFO OSMnx Retrieved response from cache file 'cache/93c71847b0929e20a96c9841c27351607c2e56bb.json'
+2024-05-04 13:26:48,564 INFO OSMnx Created GeoDataFrame with 1 rows from 1 queries
+2024-05-04 13:26:48,565 INFO OSMnx Constructed place geometry polygon(s) to query API
+2024-05-04 13:26:48,602 INFO OSMnx Projected GeoDataFrame to 'EPSG:32631 / WGS 84 / UTM zone 31N'
+2024-05-04 13:26:48,605 INFO OSMnx Projected GeoDataFrame to 'EPSG:4326 / WGS 84'
+2024-05-04 13:26:48,605 INFO OSMnx Requesting data from API in 1 request(s)
+2024-05-04 13:26:49,801 INFO OSMnx Retrieved response from cache file 'cache/0ca4655c51ebb52e43edbe29dd73503c661dea57.json'
+2024-05-04 13:26:54,462 INFO OSMnx Retrieved all data from API in 1 request(s)
+2024-05-04 13:26:54,462 INFO OSMnx 241824 geometries created in the dict
+2024-05-04 13:26:54,463 INFO OSMnx 1279 untagged features removed
+2024-05-04 13:27:02,076 INFO OSMnx Built r-tree spatial index for 240,545 geometries
+2024-05-04 13:27:02,085 INFO OSMnx Accelerating r-tree with 12 quadrats
+2024-05-04 13:27:08,564 INFO OSMnx Identified 198,288 geometries inside polygon
+2024-05-04 13:27:08,648 INFO OSMnx 42257 features removed by the polygon filter
+2024-05-04 13:27:08,667 INFO OSMnx 5581 features removed by the tag filter
+2024-05-04 13:27:13,641 INFO OSMnx 193926 features in the final GeoDataFrame
+2024-05-04 13:27:40,311 INFO OSMnx Pausing 1 second(s) before making HTTP GET request to 'nominatim.openstreetmap.org'
+2024-05-04 13:27:41,316 INFO OSMnx Get https://nominatim.openstreetmap.org/search?format=json&polygon_geojson=1&dedupe=0&limit=50&q=amsterdam%2C+NL with timeout=500
