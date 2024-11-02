@@ -1,6 +1,8 @@
 # citypy
 A CLI tool for analysing urban form using open source geospatial data.
 
+Part of the TU Delft MSc Geomatics Thesis "The City Stack - A Morphology-Based City Analysis and Generation Framework". [Repo](https://github.com/OliverJPost/CityStack)
+
 ### How to install
 1. Clone the repository
 2. Make sure you have and active Python environment with [Poetry](https://python-poetry.org) installed.
