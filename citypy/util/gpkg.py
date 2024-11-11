@@ -11,7 +11,6 @@ import pandas as pd
 import pyogrio
 import rasterio
 from loguru import logger
-from osgeo import ogr
 
 from citypy.console import conditional_status, console, display_status_if_verbose
 from citypy.util.raster import GeoRaster
