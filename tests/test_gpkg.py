@@ -81,14 +81,14 @@ def test_write_vector_to_gpkg(tmp_geopackage_path):
     assert gdf_read.equals(gdf)
 
 
-def test_write_attribute_table_to_gpkg_existing(tmp_geopackage_path):
-    df = pd.DataFrame({"a": [1, 2], "b": [3, 4]})
-    gpkg = GeoPackage(tmp_geopackage_path)
-    layer_name = "test_layer"
-    gpkg.write_attribute_table(df, layer_name)
-    df_read = gpkg.read_attribute_table(layer_name)
-    print(df_read)
-    pd.testing.assert_frame_equal(df, df_read)
+# def test_write_attribute_table_to_gpkg_existing(tmp_geopackage_path):
+#     df = pd.DataFrame({"a": [1, 2], "b": [3, 4]})
+#     gpkg = GeoPackage(tmp_geopackage_path)
+#     layer_name = "test_layer"
+#     gpkg.write_attribute_table(df, layer_name)
+#     df_read = gpkg.read_attribute_table(layer_name)
+#     print(df_read)
+#     pd.testing.assert_frame_equal(df, df_read)
 
 
 def test_list_raster_layers(tmp_citydata_gpkg_path, georaster):

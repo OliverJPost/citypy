@@ -140,79 +140,79 @@ class GeoPackage:
             engine=self._engine,
             overwrite=True,
         )
-
-    def write_attribute_table(self, data: pd.DataFrame, layer_name: str):
-        # Pyogrio supports attribute only write
-        gpd.GeoDataFrame(data).to_file(
-            str(self.filepath), layer=layer_name, driver="GPKG", engine="pyogrio"
-        )
-        return
-        ds = ogr.Open(self.filepath, update=1)
-        if ds is None:
-            out_driver = ogr.GetDriverByName("GPKG")
-            ds = out_driver.CreateDataSource("local_file.gpkg")
-
-        if ds.GetLayer(layer_name):
-            lyr = ds.GetLayer(layer_name)
-        else:
-            lyr = ds.CreateLayer(
-                layer_name,
-                geom_type=ogr.wkbNone,
-                options=["ASPATIAL_VARIANT=GPKG_ATTRIBUTES"],
-            )
-
-        field_names = [field.name for field in lyr.schema]
-        for column in data.columns:
-            if column not in field_names:
-                if pd.api.types.is_integer_dtype(data[column]):
-                    field_type = ogr.OFTInteger
-                elif pd.api.types.is_float_dtype(data[column]):
-                    field_type = ogr.OFTReal
-                else:
-                    field_type = ogr.OFTString  # Default to string for other types
-                field_defn = ogr.FieldDefn(column, field_type)
-                lyr.CreateField(field_defn)
-
-        for idx, row in data.iterrows():
-            feature = ogr.Feature(lyr.GetLayerDefn())
-            for col in data.columns:
-                if pd.api.types.is_integer_dtype(data[col]):
-                    feature.SetField(col, int(row[col]))
-                elif pd.api.types.is_float_dtype(data[col]):
-                    feature.SetField(col, float(row[col]))
-                else:
-                    feature.SetField(col, str(row[col]))
-            lyr.CreateFeature(feature)
-            feature = None
-
-        # Save and close the data source
-        ds = None
-
-    def read_attribute_table(self, layer_name: str) -> pd.DataFrame:
-        # df = gpd.read_file(self.filepath, layer_name=layer_name, engine="pyogrio")
-        # return df
-        ds = ogr.Open(self.filepath)
-        if ds is None:
-            raise FileNotFoundError(f"No GeoPackage file found at {gpkg_file}")
-
-        lyr = ds.GetLayer(layer_name)
-        if lyr is None:
-            raise ValueError(f"Layer {layer_name} not found in the GeoPackage")
-
-        rows = []
-
-        for feature in lyr:
-            row_data = {
-                field.name: feature.GetField(field.name) for field in lyr.schema
-            }
-            rows.append(row_data)
-
-        df = pd.DataFrame(rows)
-
-        # Clean up connection
-        ds = None
-
-        return df
+    #
+    # def write_attribute_table(self, data: pd.DataFrame, layer_name: str):
+    #     # Pyogrio supports attribute only write
+    #     gpd.GeoDataFrame(data).to_file(
+    #         str(self.filepath), layer=layer_name, driver="GPKG", engine="pyogrio"
+    #     )
+    #     return
+    #     ds = ogr.Open(self.filepath, update=1)
+    #     if ds is None:
+    #         out_driver = ogr.GetDriverByName("GPKG")
+    #         ds = out_driver.CreateDataSource("local_file.gpkg")
+    #
+    #     if ds.GetLayer(layer_name):
+    #         lyr = ds.GetLayer(layer_name)
+    #     else:
+    #         lyr = ds.CreateLayer(
+    #             layer_name,
+    #             geom_type=ogr.wkbNone,
+    #             options=["ASPATIAL_VARIANT=GPKG_ATTRIBUTES"],
+    #         )
+    #
+    #     field_names = [field.name for field in lyr.schema]
+    #     for column in data.columns:
+    #         if column not in field_names:
+    #             if pd.api.types.is_integer_dtype(data[column]):
+    #                 field_type = ogr.OFTInteger
+    #             elif pd.api.types.is_float_dtype(data[column]):
+    #                 field_type = ogr.OFTReal
+    #             else:
+    #                 field_type = ogr.OFTString  # Default to string for other types
+    #             field_defn = ogr.FieldDefn(column, field_type)
+    #             lyr.CreateField(field_defn)
+    #
+    #     for idx, row in data.iterrows():
+    #         feature = ogr.Feature(lyr.GetLayerDefn())
+    #         for col in data.columns:
+    #             if pd.api.types.is_integer_dtype(data[col]):
+    #                 feature.SetField(col, int(row[col]))
+    #             elif pd.api.types.is_float_dtype(data[col]):
+    #                 feature.SetField(col, float(row[col]))
+    #             else:
+    #                 feature.SetField(col, str(row[col]))
+    #         lyr.CreateFeature(feature)
+    #         feature = None
+    #
+    #     # Save and close the data source
+    #     ds = None
+    #
+    # def read_attribute_table(self, layer_name: str) -> pd.DataFrame:
+    #     # df = gpd.read_file(self.filepath, layer_name=layer_name, engine="pyogrio")
+    #     # return df
+    #     ds = ogr.Open(self.filepath)
+    #     if ds is None:
+    #         raise FileNotFoundError(f"No GeoPackage file found at {gpkg_file}")
+    #
+    #     lyr = ds.GetLayer(layer_name)
+    #     if lyr is None:
+    #         raise ValueError(f"Layer {layer_name} not found in the GeoPackage")
+    #
+    #     rows = []
+    #
+    #     for feature in lyr:
+    #         row_data = {
+    #             field.name: feature.GetField(field.name) for field in lyr.schema
+    #         }
+    #         rows.append(row_data)
+    #
+    #     df = pd.DataFrame(rows)
+    #
+    #     # Clean up connection
+    #     ds = None
+    #
+    #     return df
 
     def drop_table(self, layer_name: str) -> None:
         raise NotImplementedError("Not implemented yet.")
