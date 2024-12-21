@@ -16,28 +16,34 @@ Part of the TU Delft MSc Geomatics Thesis "The City Stack - A Morphology-Based C
 api_key = "<your_key>
 ```
 `citypy` will not work without this key
+
 2. Download a city
 ```bash
 citypy download "<city name>" "<country name>"
 ```
 There is an option to provide a WGS84 bounding box as csv string with the `--bbox` option
 Now a `"<City_Name>_<COUNTRY NAME>.gpkg"` GeoPackage will be created in the current directory
+
 3. Generate all necessary layers and metrics
 ```bash
 citypy process "<City_Name>_<COUNTRY NAME>.gpkg"
 ```
+
 4. Contextualize the metrics for each element's neighbourhood
 ```bash
 citypy contextualize "<City_Name>_<COUNTRY NAME>.gpkg" --regular --buildings
 ```
+
 5. Apply clusters to the roads layer
 ```bash
 citypy clusters apply --file "<City_Name>_<COUNTRY NAME>.gpkg" -l road_edges --col "<cluster_column_name>" --clusters citypy_gmm13_road_clusters.gmm --column-filter="type_category=street"
 ```
+
 6. Apply building classes to the buildings layer
 ```bash
 citypy process "<City_Name>_<COUNTRY NAME>.gpkg" -s building_class
 ```
+
 7. Encode the resulting city to add aggregated grids to the `gpkg` and get local typology templates
 ```bash
 citypy encode "<City_Name>_<COUNTRY NAME>.gpkg" --road-cluster-column "<cluster_column_name>" --building-class-column building_class -o ./Output_Folder/
