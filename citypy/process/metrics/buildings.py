@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 from geopandas import sjoin
 from libpysal.graph import Graph
+from libpysal import graph
 
 from config import cfg
 
@@ -73,9 +74,10 @@ class BuildingNeighborDistance(Metric):
     def _calculate(
         self, buildings: gpd.GeoDataFrame, spatial_weights: gpd.GeoDataFrame, **kwargs
     ) -> gpd.GeoDataFrame:
-        return momepy.NeighborDistance(
-            buildings, spatial_weights, cfg.layers.buildings.unique_id
-        ).series
+        delaunay = graph.Graph.build_triangulation(buildings.centroid)
+        return momepy.neighbor_distance(
+            buildings, delaunay
+        )
 
 
 # class BuildingMeanInterbuildingDistance(Metric):
